@@ -1,4 +1,4 @@
-var GKCounter = new Class({
+var Counter = new Class({
 	final: null,
 	element: null,
 	finalText: '',
@@ -128,9 +128,9 @@ var GKCounter = new Class({
 	
 	// function used when the time is up ;-)
 	countingEnded: function() {
-		// set the H3 element with the final text
+		// set the H2 element with the final text
 		this.element.set('html', '<h2>' + this.finalText + '</h2>');
 	}
 });
 
-new GKCounter(document.id('countdown'));
+new Counter(document.id('countdown'));
